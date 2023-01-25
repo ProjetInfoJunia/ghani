@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Calibri';
+
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(https://www.colorbook.io/imagecreator.php?hex=2f3542&width=1080&height=1920&text=%201080x1920);
+}
+
+.navbar a {
+    color:white; 
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffa502;
+}
+
+
+.navbar .nav-links ul {
+    display:flex;
+    visibility:hidden;
+}
+
+.show{
+    visibility: visible;
+}
+.navbar .nav-links ul li {
+    margin:0 25px;
+}
+
+.navbar .nav-links ul li.active a {
+    color:#ffa502;
+    font-weight:600;
+}
+
+.navbar .menu-hamburger{
+
+    position: absolute;
+    top:50px;
+    right:50px;
+    width:35px;
+}
+@media screen and (max-width:900px){
+    .navbar{
+        padding:0;
+    }
+
+    .nav-links .menu-hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        top:0;
+        left:0;
+        position:absolute;
+        background-color: rgba(255,255,255,0.20);
+        backdrop-filter:blur(8px);
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        margin-left:-100%;
+        transition: all 0.5s ease; 
+    }
+
+    .nav-links ul {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+}

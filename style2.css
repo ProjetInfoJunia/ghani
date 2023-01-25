@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://cdn.discordapp.com/attachments/1067447866659983462/1067524854133297252/Illustration-sans-titre_11.jpg);
+    background-size: cover;
+}
+.navbar {
+    position: absolute;
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin:auto;
+}
+
+
+    .menu li {
+        float: right;
+        width: 200px;
+    }
+
+        .menu li a:link, .menu li a:visited {
+            display: block;
+            color:#fff;
+            padding: 13% 10px;
+            text-align: center;
+        }
+
+
+        
+
+    .menu .sousmenu {
+        list-style-type: none;
+        display: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+    }
+
+        .menu .sousmenu li {
+            float: none;
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid transparent;
+            border-right: 1px solid transparent;
+            font-family: "Josefin Sans", sans-serif;
+        }
+
+            .menu .sousmenu li a:link, .menu li a:visited {
+                text-decoration: none;
+                border-radius: 5px;
+            }
+
+            .menu .sousmenu li a:hover {
+                background-color: #ffa502;
+            }
+
+    .menu li:hover .sousmenu {
+        display: block;
+    }
+
+body .logo h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    
+}
+
+body h1 span,
+body h1 i {
+    color: #ffa502;
+}
+
+h1 {
+    margin: 0% 3%;
+    font-size: 180%;
+    color: #fff;
+}
+
+.menu {
+    height: 100px;
+    list-style: none;
+    margin: -3% 1%;
+    font-size: 150%;
+}
+
+
+
+.body {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    color: #131416;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+#flip {
+    height: 67px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#flip > div > div {
+    padding: 16px 23px;
+    height: 60px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+
+#flip div:first-child {
+    animation: show 7s linear infinite;
+}
+
+#flip div div {
+    background: #ffa502;
+    border-radius: 5px;
+}
+
+#flip div:first-child div {
+    background: #8f2de5;
+    border-radius: 5px;
+}
+
+#flip div:last-child div {
+    background: #DC143C;
+    border-radius: 5px;
+}
+
+@keyframes show {
+    0% {
+        margin-top: -270px;
+    }
+
+    5% {
+        margin-top: -160px;
+    }
+
+    33% {
+        margin-top: -160px;
+    }
+
+    38% {
+        margin-top: -70px;
+    }
+
+    66% {
+        margin-top: -70px;
+    }
+
+    71% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -270px;
+    }
+}
+
+h2{
+    margin:3% 1%;
+    color:#fff;
+    
+}
+.sous-titre-2 {
+    font-size: 120%;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+.floating1 {
+    transform: translateY(0px);
+    animation: float 6s ease-in-out infinite;
+    width: 70%;
+    height: 100%;
+    margin: 0px 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating2 {
+    transform: translateY(0px);
+    animation: float 4s ease-in-out infinite;
+    width: 25%;
+    height: 100%;
+    margin: -100% -28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating3 {
+    transform: translateY(0px);
+    animation: float 4s ease-in-out infinite;
+    width: 30%;
+    height:100%;
+    margin: -35% 110%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+
+
+
+
+.titre-sous-titre {
+    margin: 0;
+    padding: 0;
+}
+
+.animation2 {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.animation2 .sous-animation2 {
+    list-style: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 90px;
+    letter-spacing: 15px;
+    animation: flash 1.4s linear infinite;
+}
+
+@keyframes flash {
+    0%{
+        color: #85009a;
+        text-shadow:none;
+    }
+    90% {
+        color: #8f2de5;
+        text-shadow: none;
+    }
+    0% {
+        color: #ffa502;
+        text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+    }
+}
+
+.animation2 .sous-animation2:nth-child(1){
+    animation-delay: .1s;
+}
+.animation2 .sous-animation2:nth-child(2) {
+    animation-delay: .2s;
+}
+.animation2 .sous-animation2:nth-child(3) {
+    animation-delay: .3s;
+}
+.animation2 .sous-animation2:nth-child(4) {
+    animation-delay: .4s;
+}
+.animation2 .sous-animation2:nth-child(5) {
+    animation-delay: .5s;
+}
+.animation2 .sous-animation2:nth-child(6) {
+    animation-delay: .6s;
+}
+.animation2 .sous-animation2:nth-child(7) {
+    animation-delay: .7s;
+}
+.animation2 .sous-animation2:nth-child(8) {
+    animation-delay: .8s;
+}
+.animation2 .sous-animation2:nth-child(9) {
+    animation-delay: .9s;
+}
+
+#pos {
+    margin: 0% 17%;
+}
+
+h2 span {
+    color: #ffa502;
+}
+
+#p1 {
+    margin: -2% 8%;
+    text-align: justify;
+    font-family: "Josefin Sans", sans-serif;
+    color: #fff;
+    font-size: 160%;
+}
+
+#p1 span {
+    color: #ffa502;
+}
+
+#p2 {
+    margin: 50% 8%;
+    text-align: justify;
+    font-family: "Josefin Sans", sans-serif;
+    color: #fff;
+    font-size: 160%;
+}
+
+#p2 span {
+    color: #ffa502;
+}
